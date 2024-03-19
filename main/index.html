@@ -3,12 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stlesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <title>UserLoginValidation</title>
 </head>
 <body>
-    
-<p>Hello</p>
+    <div class="container">
+        <h1 class="label">User Login</h1>
+
+        <form class="login_form" method="post" name="form" onsubmit=" return validate()">
+            <div class="font">Email or Phone Number</div>
+            <input autocomplete="off" type="text" name="email">
+            <div id="email_error">Please Fill Im Email Or Phone Number</div>
+            <div class="font">Password</div>
+            <input type="password" name="password">
+            <div id="password_error">Please Fill In Password</div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
